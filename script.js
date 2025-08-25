@@ -153,4 +153,52 @@ function renderTable() {
     });
 
     startFalling();
+// Question 4
+function addTask() {
+      const taskInput = document.getElementById("taskInput");
+      const taskText = taskInput.value.trim();
+      if (taskText === "") return;
+
+      const tableBody = document.querySelector("#taskTable tbody");
+      const row = document.createElement("tr");
+
+      
+      const doneCell = document.createElement("td");
+      const checkbox = document.createElement("input");
+      checkbox.type = "checkbox";
+      checkbox.onchange = function() {
+        if (checkbox.checked) {
+          taskCell.classList.add("done");
+        } else {
+          taskCell.classList.remove("done");
+        }
+      };
+      doneCell.appendChild(checkbox);
+
+      
+      const taskCell = document.createElement("td");
+      taskCell.textContent = taskText;
+
+      
+      const deleteCell = document.createElement("td");
+      const deleteBtn = document.createElement("span");
+      deleteBtn.innerHTML = "🗑️";
+      deleteBtn.classList.add("delete-btn");
+      deleteBtn.onclick = function() {
+        row.remove();
+      };
+      deleteCell.appendChild(deleteBtn);
+
+      
+      row.appendChild(doneCell);
+      row.appendChild(taskCell);
+      row.appendChild(deleteCell);
+
+      tableBody.appendChild(row);
+
+      
+      taskInput.value = "";
+    }
+
+
 
