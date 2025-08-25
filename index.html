@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h2>Student Form</h2>
+
+<form id="studentForm">
+    <label>Student Name:</label><br>
+    <input type="text" id="studentName">
+    <div id="nameError" class="error"></div><br>
+
+    <label>Student Grade (0–100):</label><br>
+    <input type="number" id="studentGrade">
+    <div id="gradeError" class="error"></div><br>
+
+    <button type="submit">Add Student</button>
+</form>
+
+<hr>
+
+<label>Filter:</label>
+<select id="filterSelect">
+    <option value="all">All</option>
+    <option value="pass">Success (>=60)</option>
+    <option value="fail">Failed (< 60)</option>
+</select>
+
+<label>Sort By:</label>
+<select id="sortSelect">
+    <option value="name">Name</option>
+    <option value="grade">Grade</option>
+</select>
+
+<table>
+    <thead>
+        <tr>
+            <th>Student Name</th>
+            <th>Grade</th>
+        </tr>
+    </thead>
+    <tbody id="studentTableBody"></tbody>
+</table>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+    </section>
+    
+
+<section>
+    <div class="container" id="container">
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+  </div>
+</section>
+<br>
+<br>
+<br>
+<br>
+<section>
+     <div id="game">
+     <div id="egg" class="egg">🥚</div>
+    <div id="basket" class="basket">🧺</div>
+    <div id="broken" class="broken">🍳</div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

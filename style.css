@@ -1,0 +1,69 @@
+body { 
+        font-family: Arial, sans-serif; 
+        margin: 30px; 
+}
+input, select, button {
+        padding: 5px;
+        margin: 5px 0;
+}
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 15px;
+}
+    th, td { 
+        border: 1px solid #ccc;
+         padding: 8px; 
+         text-align: center;
+}
+    .error { 
+        color: red; 
+        font-size: 14px;
+}
+    .container {
+      display: flex;
+      gap: 15px;
+      margin: 50px;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      cursor: pointer;
+    }
+    .red { background: red; }
+    .green { background: green; }
+    .blue { background: blue; }
+    .disabled {
+      cursor: not-allowed;
+      opacity: 0.6;
+      pointer-events: none; /* makes div unclickable */
+    }
+    #game {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      background: #fdfdfd;
+    }
+
+    .egg, .basket, .broken {
+      position: absolute;
+      font-size: 60px;
+    }
+
+    .egg {
+      top: 0;
+    }
+
+    .basket {
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 80px;
+    }
+
+    .broken {
+      bottom: 0;
+      display: none;
+      font-size: 70px;
+    }
