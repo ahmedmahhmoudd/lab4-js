@@ -66,4 +66,50 @@ input, select, button {
       bottom: 0;
       display: none;
       font-size: 70px;
+
+    }
+
+ h2 {
+      color: brown;
+      margin-top: 20px;
+    }
+    input {
+      padding: 8px;
+      width: 250px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 8px 16px;
+      background: brown;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: darkred;
+    }
+    table {
+      margin: 20px auto;
+      border-collapse: collapse;
+      width: 70%;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background: brown;
+      color: white;
+    }
+    .done {
+      text-decoration: line-through;
+      color: gray;
+    }
+    .delete-btn {
+      color: red;
+      cursor: pointer;
+      font-size: 18px;
     }
